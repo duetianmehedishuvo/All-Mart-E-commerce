@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:elevation="5dp"
+    app:cardBackgroundColor="#ABFFFFFF"
+    app:cardCornerRadius="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="fill_parent"
+                android:id="@+id/toolbar"
+                android:background="@drawable/my_gradient"
+                android:layout_height="?attr/actionBarSize">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/toolImage"
+                        android:layout_alignParentStart="true"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/app_icon" />
+
+                    <TextView
+                        android:layout_toRightOf="@+id/toolImage"
+                        android:id="@+id/toolname"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="#FFF"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="Terms &amp; Condition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </FrameLayout>
+
+        <TextView
+            android:padding="10dp"
+            android:textSize="19sp"
+            android:textColor="#000"
+            android:text="তেমন কোন শর্ত নাই তবে আপনাকে অবশ্যই কালকিনি এবং নির্ধারিত স্থান এর আওতায় থাকতে হবে । আর আমাদের থেকে ২০০ টাকার মধ্যে পন্য কিনলে ২০ টাকা সার্ভিস চার্জ,২০০ -৪০০ টাকার মধ্যে পন্য কিনলে ৩০ টাকা সার্ভিস চার্জ,৪০০+ টাকার মধ্যে পন্য কিনলে ৪০ টাকা সার্ভিস চার্জ দিতে হবে।বাজার এর তারতম্য  এর সাথে দাম এরও  তারতম্য হবে।"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

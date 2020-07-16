@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "601411921828",
+    "firebase_url": "https://shanto-ecomerch.firebaseio.com",
+    "project_id": "shanto-ecomerch",
+    "storage_bucket": "shanto-ecomerch.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:601411921828:android:1631e746eab0f9caec0331",
+        "android_client_info": {
+          "package_name": "com.tusu.santoecomerch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "601411921828-69c95refqtp1e2b63vqlnqkbgdeuvvi9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRKMGeEOQaHD1-Tb6XLzkD_4uoxFMMsP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "601411921828-69c95refqtp1e2b63vqlnqkbgdeuvvi9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

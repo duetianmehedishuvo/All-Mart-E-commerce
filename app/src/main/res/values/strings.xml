@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Allmart</string>
+    <string name="open_navigation_drawer">Open navigation drawer</string>
+    <string name="close_navigation_drawer">Close navigation drawer</string>
+
+    <string-array name="village_suggestions">
+        <item>শিকারমঙ্গল</item>
+        <item>কালকিনি উওর</item>
+        <item>কালকিনি দক্ষিন</item>
+        <item>মিয়ারহাট</item>
+        <item>উপজেলা</item>
+        <item>হাসপাতাল</item>
+        <item>গোপালপুর</item>
+        <item>ভুরঘাটা</item>
+        <item>কাশিমপুর</item>
+        <item>কালিগঞ্জ</item>
+        <item>ফাসিয়াতলা</item>
+        <item>Shikarmangol</item>
+        <item>Kalkini Uttor</item>
+        <item>Kalkini Dokkin</item>
+        <item>Miarhut</item>
+        <item>Upozela</item>
+        <item>Hospital</item>
+        <item>Gopalpur</item>
+        <item>Vurgata</item>
+        <item>Kasimpur</item>
+        <item>Kaligonj</item>
+        <item>FasiyaTola</item>
+    </string-array>
+
+</resources>

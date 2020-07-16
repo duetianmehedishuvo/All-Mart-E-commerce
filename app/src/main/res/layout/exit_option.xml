@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:elevation="5dp"
+    app:cardCornerRadius="5dp"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textColor="#000"
+            android:padding="5dp"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:text="Do You Want To Exit?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:elevation="5dp"
+                app:cardBackgroundColor="#00796B"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:textSize="20sp"
+                    android:background="@android:color/transparent"
+                    android:text="Yes"
+                    android:id="@+id/yesBTN"
+                    android:textColor="#FFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                app:cardCornerRadius="10dp"
+                android:layout_margin="3dp"
+                android:padding="3dp"
+                android:elevation="5dp"
+                app:cardBackgroundColor="#C2185B"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <Button
+                    android:textSize="20sp"
+                    android:background="@android:color/transparent"
+                    android:text="No"
+                    android:id="@+id/noBTN"
+                    android:textColor="#FFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

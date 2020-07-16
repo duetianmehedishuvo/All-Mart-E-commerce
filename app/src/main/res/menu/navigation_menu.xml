@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Home" android:id="@+id/action_home" />
+        <item android:title="Live Comments" android:id="@+id/action_live_comments" />
+        <item android:title="My Today Shop" android:id="@+id/action_today_shop" />
+        <item android:title="Terms &amp; Condition" android:id="@+id/action_terms_condition" />
+        <item android:title="কিভাবে বাজার করব" android:id="@+id/action_kivabe_bajar_korbo" />
+    </group>
+
+    <item android:title="Others">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:title="আমাদের সর্ম্পকে জানুন" android:id="@+id/action_avout_us"/>
+                <item android:title="Developer" android:id="@+id/action_developer" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

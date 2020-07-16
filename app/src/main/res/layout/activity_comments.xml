@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CommentsActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="fill_parent"
+            android:id="@+id/toolbar"
+            android:background="@drawable/my_gradient"
+            android:layout_height="?attr/actionBarSize">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/toolImage"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/app_icon" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/toolImage"
+                    android:id="@+id/toolname"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-thin"
+                    android:textColor="#FFF"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="allmart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:paddingRight="10dp"
+                    android:textSize="25dp"
+                    android:gravity="center"
+                    android:text="মন্তব্য"
+                    android:textColor="#FFF"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="match_parent"
+                    android:id="@+id/searchView"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </FrameLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:padding="3dp"
+        android:elevation="3dp"
+        app:cardCornerRadius="3dp">
+        <Button
+            android:drawableLeft="@drawable/add"
+            android:textAllCaps="false"
+            android:text="Add Comments"
+            android:textSize="22sp"
+            android:id="@+id/addComments"
+            android:onClick="gotoAddComentsActivity"
+            android:textColor="#839783"
+            android:paddingLeft="5dp"
+            android:background="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recyClerView"/>
+
+
+
+
+</LinearLayout>

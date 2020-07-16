@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SaveProduct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+
+    <Button
+        android:onClick="saveConfectionery"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Save Confectionery"
+        android:background="#276A58"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+    <Button
+        android:onClick="savedrinksDesert"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Drinks &amp; Dessert"
+        android:background="#FD6E36"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <Button
+        android:onClick="SaveCosmetic"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Cosmetic"
+        android:background="#C2185B"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+    <Button
+        android:onClick="SaveCrockeries"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Crockeries"
+        android:background="#7B1FA2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+    <Button
+        android:onClick="SaveElectronics"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Electronics"
+        android:background="#512DA8"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+    <Button
+        android:onClick="SaveFishMeat"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Fish Meat"
+        android:background="#303F9F"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+    <Button
+        android:onClick="SaveFruitsVegitable"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Fruits Vegitable"
+        android:background="#1976D2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+    <Button
+        android:onClick="SaveGroceery"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Groceery"
+        android:background="#0097A7"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+    <Button
+        android:onClick="SaveKidsTools"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Kids Tools"
+        android:background="#00796B"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+    <Button
+        android:onClick="SaveMedicine"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Medicine"
+        android:background="#388E3C"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <Button
+        android:onClick="SaveSnacks"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Snacks"
+        android:background="#FFA000"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+        <Button
+        android:onClick="SaveStudyTools"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Study Tools"
+        android:background="#C2185B"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+        <Button
+        android:onClick="SaveQuranHadis"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Quran &amp; Hadis"
+        android:background="#0288D1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+        <Button
+        android:onClick="SaveGas"
+        android:layout_marginTop="5dp"
+        android:textAllCaps="false"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        android:text="Gas"
+        android:background="#0288D1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:spannable="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".ReportActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="fill_parent"
+            android:id="@+id/toolbar"
+            android:background="@drawable/my_gradient"
+            android:layout_height="?attr/actionBarSize">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/toolImage"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/app_icon" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/toolImage"
+                    android:id="@+id/toolname"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-thin"
+                    android:textColor="#FFF"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="allmart.com"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:padding="3dp"
+        android:elevation="3dp"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textColor="@color/primary_text"
+            android:text="Bazar Report "
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.jiakaiyang.lib.SpannableTextView
+                    android:gravity="start"
+                    android:textSize="19sp"
+                    android:textColor="@color/primary_text"
+                    android:text="নামঃ"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    spannable:addForegroundColorSpan="0,0,4,0,#24A939;"
+                    android:layout_height="match_parent"/>
+                <View
+                    android:background="#420606"
+                    android:layout_weight=".02"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:id="@+id/areportUserName"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="start"
+                    android:paddingLeft="5dp"
+                    android:text="মেহেদি হাসান শুভ "
+                    android:textColor="@color/primary_text"
+                    android:textSize="19sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.jiakaiyang.lib.SpannableTextView
+                    android:gravity="start"
+                    android:textSize="19sp"
+                    android:textColor="@color/primary_text"
+                    android:text="মোবাইলঃ"
+                    spannable:addForegroundColorSpan="0,0,7,0,#24A939;"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+                <View
+                    android:background="#420606"
+                    android:layout_weight=".02"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:id="@+id/areportUserMobile"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="start"
+                    android:paddingLeft="5dp"
+                    android:text="০১৭৭৭৩৮২৭৬"
+                    android:textColor="@color/primary_text"
+                    android:textSize="19sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <com.jiakaiyang.lib.SpannableTextView
+                    android:gravity="start"
+                    android:textSize="19sp"
+                    android:textColor="@color/primary_text"
+                    android:text="ঠিকানাঃ"
+                    spannable:addForegroundColorSpan="0,0,7,0,#24A939;"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"/>
+
+                <View
+                    android:background="#420606"
+                    android:layout_weight=".02"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:id="@+id/areportUserAddress"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:gravity="start"
+                    android:paddingLeft="5dp"
+                    android:text="শিকারমংল ,কালকিনি,মাদারিপুর,বাংলাদেশ"
+                    android:textColor="@color/primary_text"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="10dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="2dp">
+        <TextView
+            android:gravity="start"
+            android:textSize="15sp"
+            android:paddingLeft="5dp"
+            android:textColor="@color/primary_text"
+            android:text="পন্য গুলো হলঃ"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyClerView"
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/cardView2"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:elevation="3dp"
+            android:padding="5dp"
+            app:cardBackgroundColor="#F8F6F6"
+            android:id="@+id/cardView2"
+            android:layout_above="@+id/cardView"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.jiakaiyang.lib.SpannableTextView
+                    android:gravity="start|center"
+                    android:fontFamily="sans-serif-thin"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    spannable:addForegroundColorSpan="0,3,9,0,#C2185B;"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="মোট টাকাঃ" />
+
+                <View
+                    android:background="@color/primary_light"
+                    android:layout_weight=".01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/reportUserTotalCost"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif-thin"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:text="200"
+                    android:textColor="#000"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:elevation="3dp"
+            android:padding="5dp"
+            android:layout_above="@id/cardView3"
+            android:id="@+id/cardView"
+            app:cardBackgroundColor="#C2185B"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="start|center"
+                    android:fontFamily="sans-serif-thin"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:id="@+id/productNameShowOrder"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="মন্তব্য করুন" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:elevation="3dp"
+            android:padding="5dp"
+            android:id="@+id/cardView3"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="#00796B"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="end|center"
+                    android:fontFamily="sans-serif-thin"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/finisActivity"
+                    android:textSize="22sp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="সমাপ্ত করুন" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tusu.santoecomerch">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/apps_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/apps_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash_ScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AboutUsActivity" />
+        <activity android:name=".AboutDeveloperActivity" />
+        <activity android:name=".Add_ComentsActivity" />
+        <activity android:name=".CommentsActivity" />
+        <activity android:name=".ReportActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".ShopListActivity" />
+        <activity android:name=".SaveProduct" >
+
+        </activity>
+        <activity android:name=".ProductAddBTNClickActivity" />
+        <activity android:name=".MainActivity">
+
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="3dp"
+    android:padding="5dp"
+    android:elevation="3dp"
+    app:cardCornerRadius="5dp"
+    app:cardBackgroundColor="#FFFFFF"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="#FFF"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/productIV"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/ic_launcher_background" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="2"
+                android:paddingLeft="5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/product_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:text="Chicken Eggs(Layer)"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/product_last_price"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="✘ ৳ ৬৭" />
+
+                    <TextView
+                        android:id="@+id/product_currentPrice"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="start|center"
+                        android:text="☑ ৳ 85"
+                        android:textColor="#FF0101" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/product_quentity"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="top|center"
+                    android:text="১ কেজি"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/product_DOWNBTN"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:focusable="false"
+                        android:src="@drawable/minus"
+                        />
+
+                    <TextView
+                        android:id="@+id/dessert_number"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:layout_width="0dp"
+                        android:text="0" />
+
+                    <ImageButton
+                        android:id="@+id/product_addBTN"
+                        android:layout_width="36dp"
+                        android:layout_height="43dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="#fff"
+                        android:focusable="false"
+                        android:src="@drawable/add" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

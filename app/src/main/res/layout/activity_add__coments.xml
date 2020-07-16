@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:spannable="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".Add_ComentsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="fill_parent"
+                android:id="@+id/toolbar"
+                android:background="@drawable/my_gradient"
+                android:layout_height="?attr/actionBarSize">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/toolImage"
+                        android:layout_alignParentStart="true"
+                        android:layout_width="50dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/app_icon" />
+
+                    <TextView
+                        android:layout_toRightOf="@+id/toolImage"
+                        android:id="@+id/toolname"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="#FFF"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="allmart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                    <TextView
+                        android:paddingRight="10dp"
+                        android:textSize="25dp"
+                        android:gravity="center"
+                        android:text="মন্তব্য"
+                        android:textColor="#FFF"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_height="match_parent"
+                        android:id="@+id/searchView"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </FrameLayout>
+
+
+        <com.jiakaiyang.lib.SpannableTextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="* আপনার নাম লিখুনঃ"
+            spannable:addForegroundColorSpan="0,0,1,0,#FFFF0000;0,8,11,0,#24A939;" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="5dp">
+
+            <EditText
+                android:id="@+id/commentsADDNameTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name......" />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.jiakaiyang.lib.SpannableTextView
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*ঠিকানা লিখুনঃ(Optional)"
+            spannable:addForegroundColorSpan="0,0,-10,0,#FFFF0000;0,0,10,0,#24A939;" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="5dp">
+
+            <EditText
+                android:id="@+id/commentsADDAddressTV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address......" />
+
+        </androidx.cardview.widget.CardView>
+
+        <com.jiakaiyang.lib.SpannableTextView
+            android:layout_width="wrap_content"
+            android:padding="5dp"
+            android:layout_height="wrap_content"
+            android:text="*(মন্তব্য লিখুনঃ)"
+            spannable:addForegroundColorSpan="0,0,-1,0,#FFFF0000;0,0,9,0,#24A939;0,0,2,0,#FFFF0000;" />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:elevation="5dp"
+            app:cardCornerRadius="5dp">
+
+            <EditText
+                android:id="@+id/commentsADDTV"
+                android:gravity="start"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:hint="Comments Here.." />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            app:cardBackgroundColor="#C2185B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:onClick="saveCommants"
+                android:textColor="#fff"
+                android:textSize="20dp"
+                android:id="@+id/addComments"
+                android:text="Add Comments Live"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    </ScrollView>
+
+</androidx.cardview.widget.CardView>

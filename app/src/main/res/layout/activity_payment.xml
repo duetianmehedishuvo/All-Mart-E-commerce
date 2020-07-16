@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:spannable="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    tools:context=".PaymentActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="fill_parent"
+            android:id="@+id/toolbar"
+            android:background="@drawable/my_gradient"
+            android:layout_height="?attr/actionBarSize">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_toRightOf="@+id/toolImage"
+                    android:id="@+id/toolname"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-thin"
+                    android:textColor="#FFF"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="আমার আজকের বাজার"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/toolprice"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="sans-serif-thin"
+                    android:textColor="#FFF"
+                    android:gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="200 ৳"
+                    android:padding="5dp"
+                    android:background="@drawable/my_tool_price"
+                    android:layout_marginRight="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </FrameLayout>
+
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="#FDFCFC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="@android:color/transparent"
+            android:text="Payment Method:"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <com.jiakaiyang.lib.SpannableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* আপনার নাম লিখুনঃ"
+                    spannable:addForegroundColorSpan="0,0,1,0,#FFFF0000;0,8,11,0,#24A939;" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:id="@+id/payment_nameET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Name......" />
+
+                </androidx.cardview.widget.CardView>
+
+                <com.jiakaiyang.lib.SpannableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* ইউনিয়ন/গ্রাম/বাজার নাম লিখুনঃ"
+                    spannable:addForegroundColorSpan="0,0,1,0,#FFFF0000;0,8,15,0,#24A939;" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="5dp">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/paymentAutocompleteTV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Village......" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <com.jiakaiyang.lib.SpannableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  তার পরের ঠিকানা লিখুনঃ(Optional)"
+                    spannable:addForegroundColorSpan="0,0,-10,0,#FFFF0000;0,10,17,0,#24A939;" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:id="@+id/paymenAddressET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Address......" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <com.jiakaiyang.lib.SpannableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* মোবাইল নম্বর দিনঃ"
+                    spannable:addForegroundColorSpan="0,0,1,0,#FFFF0000;0,8,15,0,#24A939;" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="5dp">
+
+                    <EditText
+                        android:id="@+id/paymentMobileET"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Mobile Number......"
+                        android:inputType="number" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <com.jiakaiyang.lib.SpannableTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="* টাকা পরিশোধ করুনঃ"
+                    spannable:addUnderlineSpan="0,2,19,0"
+                    spannable:addForegroundColorSpan="0,0,1,0,#FFFF0000;0,2,19,0,#24A939;" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp"
+                                android:elevation="3dp"
+                                app:cardCornerRadius="10dp">
+
+                                <Button
+                                    android:id="@+id/bkashBTN"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#C2185B"
+                                    android:text="Bkash"
+                                    android:textAllCaps="false"
+                                    android:textColor="#fff" />
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="0dp"
+                                android:layout_weight="1"
+                                android:layout_height="match_parent"
+                                android:layout_margin="3dp"
+                                android:padding="3dp"
+                                android:elevation="3dp"
+                                app:cardCornerRadius="10dp">
+
+                                <Button
+                                    android:id="@+id/cashonBTN"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="#E64A19"
+                                    android:text="Cash On"
+                                    android:textAllCaps="false"
+                                    android:textColor="#fff" />
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+                        <com.jiakaiyang.lib.SpannableTextView
+                            android:layout_width="wrap_content"
+                            android:id="@+id/paymethod_showTV"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="না বুজলে উপরের বাঁটন (Bkash,DBBL,etc) Click করুন।"
+                            spannable:addForegroundColorSpan="0,0,2,0,#FFFF0000;0,21,37,0,#24A939;" />
+
+                        <EditText
+                            android:id="@+id/paymentTranictionNumberET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Tranistion Number..." />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    app:cardBackgroundColor="#C2185B"
+                    android:padding="10dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <Button
+                        android:onClick="order_now"
+                        android:id="@+id/paymentConfirmBTN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:text="অনুরোধ করুন"
+                        android:textColor="#FFF"
+                        android:textSize="22sp" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:elevation="5dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:padding="5dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="#0288D1"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:onClick="know_my_details"
+                                android:id="@+id/paymentKnowMyINFOBTN"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="আমাদের সম্পর্কে জানুন"
+                                android:textColor="#FFF" />
+
+                        </androidx.cardview.widget.CardView>
+
+                        <View
+                            android:background="#033A72"
+                            android:layout_weight=".01"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"/>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="0dp"
+                            android:padding="5dp"
+                            app:cardCornerRadius="10dp"
+                            app:cardBackgroundColor="#00796B"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <Button
+                                android:onClick="likeFacebook"
+                                android:id="@+id/paymentLIKEFACEBOOKBTN"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/transparent"
+                                android:text="Like Our Facebook Page"
+                                android:textAllCaps="false"
+                                android:textColor="#FFF" />
+
+                        </androidx.cardview.widget.CardView>
+
+
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </ScrollView>
+
+
+</LinearLayout>

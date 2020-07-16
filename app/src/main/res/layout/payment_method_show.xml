@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="3dp"
+    android:elevation="5dp"
+    android:padding="3dp"
+    app:cardCornerRadius="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/patmentMethodTV"
+            android:padding="5dp"
+            android:background="#C2185B"
+            android:textColor="#FFF"
+            android:textSize="22sp"
+            android:text="বিকাশের মাধ্যমে মূল্য পরিশোধ করার নিয়মঃ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/patmentMethodDescriptionTV"
+            android:padding="5dp"
+            android:background="#0800796B"
+            android:textColor="#130000"
+            android:textSize="18sp"
+            android:text="step 1: Dial *247#\nstep 2:Select option 1(Send Money)\nstep 3: Enter this Number (+8801303129515)\nstep 4:Enter Amount\nstep 5:Enter Reference like(1234)\nstep6:Enter Your Pin number\nstep 7:Copy Tranistion number and Paste Below Box."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:padding="5dp"
+            android:background="#C2185B"
+            android:textColor="#FFF"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:drawableRight="@drawable/ic_below"
+            android:text="নিচের ফাকা Box এ আপনার Payment Tranisiction Id দিন।"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

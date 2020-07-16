@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProductAddBTNClickActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="fill_parent"
+            android:id="@+id/toolbar"
+            android:background="@drawable/my_gradient"
+            android:layout_height="?attr/actionBarSize">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/toolImage"
+                    android:layout_alignParentStart="true"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/app_icon" />
+
+                <TextView
+                    android:layout_toRightOf="@+id/toolImage"
+                    android:id="@+id/toolname"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-thin"
+                    android:textColor="#FFF"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:text="allmart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <com.miguelcatalan.materialsearchview.MaterialSearchView
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/searchView"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyClerView"
+            android:background="#160B8CD3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/cardView"
+            />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:elevation="3dp"
+            android:padding="5dp"
+            android:id="@+id/cardView"
+            android:layout_alignParentBottom="true"
+            app:cardBackgroundColor="@color/colorPrimaryDark"
+            app:cardCornerRadius="5dp">
+
+            <LinearLayout
+                android:id="@+id/orderNowLL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:gravity="start|center"
+                    android:fontFamily="sans-serif-thin"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:id="@+id/productNameShowOrder"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="10dp"
+                    android:text="Order Now" />
+
+                <View
+                    android:background="@color/primary_light"
+                    android:layout_weight=".01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"/>
+
+                <TextView
+                    android:id="@+id/buttom_shit_count_price"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-thin"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</LinearLayout>

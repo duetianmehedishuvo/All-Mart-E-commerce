@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:padding="5dp"
+    android:elevation="5dp"
+    app:cardBackgroundColor="#ABFFFFFF"
+    app:cardCornerRadius="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="fill_parent"
+                android:id="@+id/toolbar"
+                android:background="@drawable/my_gradient"
+                android:layout_height="?attr/actionBarSize">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/toolImage"
+                        android:layout_alignParentStart="true"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/app_icon" />
+
+                    <TextView
+                        android:layout_toRightOf="@+id/toolImage"
+                        android:id="@+id/toolname"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-thin"
+                        android:textColor="#FFF"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="কিভাবে বাজার করবেন"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:padding="10dp"
+                    android:textSize="19sp"
+                    android:textColor="#000"
+                    android:text="১।প্রথমেই Item থেকে আপনার পছন্দের Item Choose করে তার উপরে click করুন।\n\n
+২।আপনার সামনে অনেক product show করবে আপনি আপনার পছন্দের product টি বেছে নিন এবং কতটি লাগবে তা +,- Button দ্বারা Identify করি।\n\n
+৩।তারপর অপরে Search Icon এর পাসের ♗Icon এ click করি।তাহলে আপনি আপনার আজকের বাজার লিস্ট দেখতে পারবেন।\n\n
+৪।সবকিছু ঠিকঠাক থাকলে Order Now Button এ Click করি।\n\n
+৫।আপনি নাম ঠিকানা দিয়ে,টাকা পরিশোধ করার মাধ্যম Select করে নিচের text টুকু পরুন।টাকা পাঠিয়ে তার Tranistion Id টা লাস্ট এর ঘরে দিয়ে অনুরোধ করুন Button টি click করুন।\n\n
+৬।সবকিছু ঠিকঠাক থাকলে আপনাকে আজকের বাজারের রিপোর্ট দেওয়া হবে,আর যদি কোন obsection,মন্তব্য থাকে তবে Comments Page তো খোলাই আছে।\n\n
+৭।ধন্যবাদ।"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>
